@@ -45,3 +45,40 @@
 .menu-list>li:nth-child(2n) {
     color: brown;
 }
+
+.table-color {
+    border-collapse: collapse;
+}
+/*자손이므로 tbody 무시*/
+.table-color tr:first-child{
+    background-color: yellow;
+}
+/*자식이므로 tbody 추가*/
+.table-color>tbody>tr:last-child {
+    background-color: aqua;
+}
+
+/*위의 선택자 중 하나를 이용해서 짝수 색만 바꾸기*/
+.table-color tr:nth-child(2n) {
+    background-color: blueviolet;
+}
+
+.child-tag>p:first-child {
+    color: blue;
+}
+.child-tag>h1 {
+    color:brown
+}
+
+/*클래스를 지정하고 자손으로 타입찾기*/
+.of-type p:first-of-type {
+    color:red
+}
+
+/*
+클래스를 지정하고 자식으로 타입찾기
+first-child와 동일한 역할
+*/
+.of-type>p:first-of-type {
+    background-color: bisque;
+}
