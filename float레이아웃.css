@@ -19,8 +19,10 @@
 }
 .main {
     background-color: burlywood;
-    height: 200px;
+    min-height: 200px;
     padding: 5px;
+    /*height 지정한 곳에서는 scroll이 생긴다*/
+    overflow: auto;
 }
 .section1, .section2 {
     background-color: brown;
@@ -32,4 +34,41 @@
 }
 .section2 {
     margin-left: 110px;
+}
+
+.header-border { 
+    border: red 2px solid;
+    text-align: center;
+}
+.nav-border { 
+    border: orange 2px solid;
+    float: left;
+    width: 150px;
+}
+.section-border {
+    border: blue 2px solid;
+    margin-left: 154px;
+}
+.footer-border {
+    border: violet 2px solid;
+    clear:both;
+}
+
+.float-right {
+    float: right;
+}
+
+.align-margin {
+    width: 150px ;
+    margin: 0 auto;
+}
+
+.align-position {
+    position: relative;
+    left: 40%;
+}
+
+.container {
+    background-color: yellow;
+    overflow: auto;
 }
