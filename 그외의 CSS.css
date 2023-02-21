@@ -87,8 +87,9 @@ body {
     color: transparent;
 }
 
-.border-image {
-    border-image: url(./img/border.png) 30 / 19px round;
+.border-image { 
+    border: 36px solid orange;
+    border-image:url(./img/border.png) 30;
 }
 
 .text {
