@@ -82,3 +82,49 @@ first-child와 동일한 역할
 .of-type>p:first-of-type {
     background-color: bisque;
 }
+
+.first-letter:hover:first-letter {
+    color: blue;
+    font-size: 1.5rem;
+}
+
+.first-line::first-line {
+    background-color: yellow;
+}
+
+.before::before {
+    /*content를 넣어서 내용 추가*/
+    /*글자, url 을 통해 이미지 추가*/
+    content: url(./img/pencil-solid.svg);
+    /*inline-block을 넣어서 크기조절*/
+    display: inline-block;
+    width: 20px;
+}
+
+.before-color::before {
+    content: "";
+    background-color: yellow;
+    /*content에 글자가 없을때, inline-block사용*/
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.after::after {
+    /*content 속성을 사용*/
+    content: "추가";
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 20px;
+}
+.after-color:hover:after {
+    content: "추가된 글자";
+    color: #ffffff;
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+}
