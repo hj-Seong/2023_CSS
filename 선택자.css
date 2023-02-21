@@ -128,3 +128,30 @@ first-child와 동일한 역할
     position: absolute;
     left: 0;
 }
+
+.before-image::before {
+    content: "";
+    /*content로 이미지 크기 수정 어려움(고정)*/
+    /*크기 수정이 가능한 background-image로 추가*/
+    background-image: url(./img/bird.jpg);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+.attr>input[type="checkbox"]:checked+span {
+    color: crimson;
+}
+
+.attr>input[type="radio"]:checked+span {
+    text-decoration: underline wavy;
+}
+
+.attr>input[type="button"] {
+    background-color: #000;
+    color: #ffffff;
+}
+
+.attr>input[type="radio"][value="group"] {
+    /*두개이상의 속성이름과 속성값을 가진 태그를 찾을수 있다*/
+}
