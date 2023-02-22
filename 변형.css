@@ -27,3 +27,22 @@
     background-color: red;
     transition: background-color 1s;
 }
+.transition {
+    transition: background-color 0.5s;
+}
+
+.transform-transition:hover {
+    transform: translate(100px,0) rotate(90deg);
+    width: 200px;
+    transition: all 1s;
+    transition-delay: 0.5s;
+}
+.transform-transition {
+    transition: transform 1s, width 1s;
+}
+
+.linear-transition:hover {
+    transform: rotate(90deg);
+    transition: all 1s;
+    transition-timing-function: linear;
+}
