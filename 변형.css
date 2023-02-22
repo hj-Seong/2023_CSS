@@ -142,3 +142,18 @@ input[type="checkbox"]+span {
     opacity: 0.5;
     transition: all 1s;
 }
+.animation {
+    animation-name: movingback;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes moving {
+    from { transform: translate(0,0);}
+    to { transform: translate(100px,0);}
+}
+
+@keyframes movingback {
+    0% { transform: translate(0,0);}
+    50% { transform: translate(200px,0);}
+    100% { transform: translate(0,0);}
+}
