@@ -1,0 +1,29 @@
+.my-box {
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+}
+
+.trans {
+    transform: translate(10px, -10px);
+}
+
+.rotate {
+    transform: rotate(30deg);
+}
+
+.transform {
+    transform: translate(100px ,0)
+                scale(0.8) skewX(20deg) ;
+}
+
+.transform-3d {
+    transform: rotateX(60deg) rotateY(30deg) 
+                translate3d(0,0,-20px);
+}
+
+/* 전환이 될 방법을 알려줘야한다(hover 등)*/
+.transition:hover {
+    background-color: red;
+    transition: background-color 1s;
+}
