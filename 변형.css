@@ -217,3 +217,33 @@ input[type="checkbox"]+span {
     text-align: center;
     z-index: 10;
 }
+
+.filter {
+    width: 300px;
+}
+
+.filter:hover {
+    filter: blur(5px) brightness(1.2);
+    transition: all 1s;
+}
+
+.image-list>.content-image {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+}
+.image-list>.content-image:nth-child(1) {
+    background-image: url(./img/bird.jpg);
+}
+.image-list>.content-image:nth-child(1):hover {
+    filter: invert();
+}
+.image-list>.content-image:nth-child(2) {
+    background-image: url(./img/bird2.jpg);
+    filter:contrast(50%);
+}
+.image-list>.content-image:nth-child(3) {
+    background-image: url(./img/bird3.jpg);
+    filter: sepia(20%);
+}
