@@ -247,3 +247,26 @@ input[type="checkbox"]+span {
     background-image: url(./img/bird3.jpg);
     filter: sepia(20%);
 }
+.pencle {
+    background-image: url(./img/pencil-solid.svg);
+    width: 50px;
+    height: 50px;
+    animation: rotatepencle 1s infinite;
+}
+@keyframes rotatepencle {
+    0% {transform: rotate(0);}
+    10% {transform: rotate(-30deg);}
+    65%  {transform: rotate(30deg);}
+    75% {transform: rotate(0);}
+    100% {transform: rotate(0);}
+}
+
+.mix-blend {
+    position: fixed;
+    top: 0;
+    color: white;
+    mix-blend-mode: difference;
+}
+body {
+    background-color: white;
+}
