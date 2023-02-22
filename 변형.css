@@ -157,3 +157,63 @@ input[type="checkbox"]+span {
     50% { transform: translate(200px,0);}
     100% { transform: translate(0,0);}
 }
+
+.wrap {
+    overflow: hidden;
+}
+
+.animation-box {
+    animation: movingbox 4s infinite;
+
+}
+@keyframes movingbox {
+    0% {}
+    20% {
+        transform: rotate(90deg);
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+        border-top-right-radius: 0%;
+
+    }
+    40% {
+        transform: rotate(180deg);
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 0%;
+        border-top-right-radius: 0%;
+
+    }
+    60% {
+        transform: rotate(270deg);
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 0%;
+    }
+    80% {
+        transform: rotate(360deg);
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 50%;
+        background-color: orangered;
+    }
+    100% {
+        transform: rotate(360deg);
+        border-top-left-radius: 0%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+        border-top-right-radius: 0%;
+    }
+}
+
+.text {
+    position: absolute;
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    padding-top: 50px;
+    text-align: center;
+    z-index: 10;
+}
