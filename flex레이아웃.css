@@ -44,3 +44,22 @@
 .flex-box-item>p:nth-child(2) {
     align-self: flex-end;
 }
+.flex-box-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-box-bar>.logo {
+    background-image: url(./img/pencil-solid.svg);
+    min-width: 30px;
+    height: 30px;
+}
+.flex-box-bar>.flex-box-menu {
+    width: 80%;
+}
+.flex-box-bar>.flex-box-menu>ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding:0;
+}
