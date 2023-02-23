@@ -9,9 +9,10 @@
     height: 150px;
     background-color: burlywood;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 .flex-box-height>p{
+    margin: 0;
     padding: 5px;
     background-color: aliceblue;
 }
@@ -29,4 +30,17 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
+}
+
+.flex-box-item {
+    display: flex;
+    height: 150px;
+    background-color: burlywood;
+    justify-content: space-between;
+}
+.flex-box-item>p:nth-child(1) {
+    align-self: center;
+}
+.flex-box-item>p:nth-child(2) {
+    align-self: flex-end;
 }
