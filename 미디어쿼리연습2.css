@@ -1,0 +1,13 @@
+/* PC와 Tablet의 사이즈 */
+.contain {
+    /* 최소 높이값을 지정해서 화면에 내용 출력 */
+    min-height: 300px;
+    /* 최대 넓이값을 지정해서 1000px이상 커지면 안커지게*/
+    max-width: 1000px;
+    background-color: aquamarine;
+    /*공간이 남을 경우 중앙 정렬*/
+    margin: auto;
+    
+}
+
+/* Mobile 사이즈로 작성 : max-width:767px*/
