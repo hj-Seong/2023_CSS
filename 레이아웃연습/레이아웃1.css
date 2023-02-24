@@ -27,13 +27,17 @@ body { margin: 0; padding: 0;}
 }
 
 /* main-float 의 내용 */
-.main-float { overflow: auto; }
+.main-float { overflow: visible; }
 .main-float>.aside {
+    box-sizing: border-box;
+    padding: 10px 0;
     float: left;
     width: 300px; height: 500px;
     background-color: rgb(75, 245, 75);
 }
 .main-float>.content {
+    box-sizing: border-box;
+    padding: 10px 0;
     margin-left: 300px;
     height: 500px;
     background-color: rgb(130, 255, 73);
